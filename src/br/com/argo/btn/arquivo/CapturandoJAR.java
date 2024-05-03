@@ -24,20 +24,20 @@ public class CapturandoJAR implements AcaoRotinaJava {
     	String chave = "jar_" + UIDGenerator.getNextID();
         	
             try {
-//            	hnd = JapeSession.open();
-////        		//CAMPO ARQUIVO DA TABELA É ONDE TEM O JAR
-//        		Object jar = r.getCampo("ARQUIVO");
-//        		if(jar != null) {
-//        			//BYTE ARRAY DO ARQUIVO QUE QUER BAIXAR 
-//        			byte[] fileContent = (byte[])jar;
-//        			
-//        			//INSTANCIA O ARQUIVO JAR
-//        			SessionFile sessionFile = SessionFile.createSessionFile("FileViewer.jar", "application/jar", fileContent);
-//        
-//        			// SESSÃO PARA DOWNLOAD 
-//        			ServiceContext.getCurrent().putHttpSessionAttribute(chave, sessionFile);
-            	ctx.setMensagemRetorno("testando");
-//        		}
+            	hnd = JapeSession.open();
+//        		//CAMPO ARQUIVO DA TABELA É ONDE TEM O JAR
+        		Object jar = r.getCampo("ARQUIVO");
+        		if(jar != null) {
+        			//BYTE ARRAY DO ARQUIVO QUE QUER BAIXAR 
+        			byte[] fileContent = (byte[])jar;
+        			
+        			//INSTANCIA O ARQUIVO JAR
+        			SessionFile sessionFile = SessionFile.createSessionFile("FileViewer.jar", "application/jar", fileContent);
+        
+        			// SESSÃO PARA DOWNLOAD 
+        			ServiceContext.getCurrent().putHttpSessionAttribute(chave, sessionFile);
+//            	ctx.setMensagemRetorno("testando");
+        		}
             } catch (Exception e) {
             	ctx.mostraErro(e.getMessage());
                 // Lidar com a exceção aqui AQUI
@@ -46,12 +46,12 @@ public class CapturandoJAR implements AcaoRotinaJava {
             	JapeSession.close(hnd);
             }
             
-//        	ctx.setMensagemRetorno("<p><strong>Atenção: Ao baixar o arquivo salve como .jar</strong></p>"
-//			+ "<p>Use site como: http://www.javadecompilers.com para descompilar </p>"
-//			+ "<a id=\"alink\" href=\"/mge/visualizadorArquivos.mge?chaveArquivo=" 
-//			+ chave 
-//			+ "&ignoraPodeExportarjar=N&forcarDownload=N\" target=\"_blank\">Baixar jar</a>");
-//     
+        	ctx.setMensagemRetorno("<p><strong>Atenção: Ao baixar o arquivo salve como .jar</strong></p>"
+			+ "<p>Use site como: http://www.javadecompilers.com para descompilar </p>"
+			+ "<a id=\"alink\" href=\"/mge/visualizadorArquivos.mge?chaveArquivo=" 
+			+ chave 
+			+ "&ignoraPodeExportarjar=N&forcarDownload=N\" target=\"_blank\">Baixar jar</a>");
+     
         
     }
 

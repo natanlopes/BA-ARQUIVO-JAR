@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="sank-controller-util">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/SDK/Bibliotecas-Sankya-Padroes-LIB-main/api_sankhya/sank-controller-util.jar!/" />
+      <root url="jar://$USER_HOME$/SDK/Bibliotecas-Sankya-Padroes-LIB-main/api_sankhya/sanhttp.jar!/" />
+      <root url="jar://$USER_HOME$/SDK/Bibliotecas-Sankya-Padroes-LIB-main/api_sankhya/sannfe.jar!/" />
+      <root url="jar://$USER_HOME$/SDK/Bibliotecas-Sankya-Padroes-LIB-main/api_sankhya/sanSMS-client.jar!/" />
+      <root url="jar://$USER_HOME$/SDK/Bibliotecas-Sankya-Padroes-LIB-main/api_sankhya/sanutil.jar!/" />
+      <root url="jar://$USER_HOME$/SDK/Bibliotecas-Sankya-Padroes-LIB-main/api_sankhya/sanws.jar!/" />
+      <root url="jar://$USER_HOME$/SDK/Bibliotecas-Sankya-Padroes-LIB-main/api_sankhya/mgefin-model-client.jar!/" />
+      <root url="jar://$USER_HOME$/SDK/Bibliotecas-Sankya-Padroes-LIB-main/api_sankhya/mgecom-model-client.jar!/" />
+      <root url="jar://$USER_HOME$/SDK/Bibliotecas-Sankya-Padroes-LIB-main/api_sankhya/jape.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
